@@ -1,12 +1,12 @@
- CREATE SCHEMA `tienda_zapatillas`;
- USE `tienda_zapatillas`;
+ CREATE SCHEMA `tiendas_zapatillas`;
+ USE `tiendas_zapatillas`;
  
  CREATE TABLE `Zapatillas`(
  `id_zapatilla` INT NOT NULL AUTO_INCREMENT,
  `modelo` VARCHAR(45) NOT NULL,
  `color` VARCHAR(45) NOT NULL,
  PRIMARY KEY(`id_zapatilla`)
-	);
+ );
     
 CREATE TABLE `Clientes`(
 	`id_cliente` INT NOT NULL AUTO_INCREMENT,
@@ -19,7 +19,7 @@ CREATE TABLE `Clientes`(
     `pais` VARCHAR(45) NOT NULL,
     `codigo_postal` VARCHAR(45) NOT NULL,    
     PRIMARY KEY(`id_cliente`)
-    );
+);
     
 CREATE TABLE `Empleados`(
 	`id_empleado` INT NOT NULL AUTO_INCREMENT,
@@ -47,4 +47,4 @@ CREATE TABLE `Facturas`(
 	CONSTRAINT `fk_Facturas_Clientes`
 		FOREIGN KEY(`id_cliente`)
         REFERENCES `Clientes` (`id_cliente`) ON DELETE CASCADE ON UPDATE CASCADE
-        );
+);

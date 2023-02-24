@@ -3,6 +3,8 @@
 -- Host: localhost    Database: northwind
 -- ------------------------------------------------------
 -- Server version	8.0.29-0ubuntu0.21.10.2
+
+--Al archivo facilitadosolo hemos añadido las dos lineas de abajo indicadas
 CREATE SCHEMA `northwind`; 
 USE `northwind` ;
 
